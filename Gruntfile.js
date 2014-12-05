@@ -56,7 +56,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-broccoli-build');
     grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-webpack');
     grunt.loadNpmTasks('grunt-benchmark');
     grunt.loadTasks('./tasks/');
 
