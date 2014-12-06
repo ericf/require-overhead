@@ -2,9 +2,10 @@
 
 var fs = require('fs');
 var vm = require('vm');
+var context = vm.createContext({});
 
 var file = fs.readFileSync('./build/bundle.js', 'utf8');
 
 module.exports = function () {
-    vm.runInNewContext(file);
+    vm.runInContext(file, context);
 };
